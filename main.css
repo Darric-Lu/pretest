@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: #EBEBEB;
+    margin: 0;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    width: 960px;
+    position: relative;
+  }
+
+
+  .search-bar {
+    background-color: rgb(200, 200, 200);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 960px;
+    padding-left: 32px;
+    z-index: 99;
+  }
+
+  .search-icon {
+    height: 20px;
+    margin: 5px 0 0 15px;
+  }
+
+  .search-wrap {
+    background-color: #fff;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+  }
+
+  .search-wrap input[type="search"] {
+    margin-left: 15px;
+    font-size: 20px;
+    border: none;
+  }
+
+  .search-wrap input[type="search"]:focus {
+    outline: none
+  }
+
+  .banner {
+    width: 960px;
+    height: 540px;
+    margin-top: 72px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .banner-wrap {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    transform: translateX(0%);
+    transition: 0.6s ease-in-out;
+  }
+
+  .image-wrap {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+  }
+
+  .image {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .item-1 {
+    left: 0;
+  }
+
+  .item-2 {
+    left: 100%;
+  }
+
+  .item-3 {
+    left: 200%;
+  }
+
+  .item-4 {
+    left: 300%;
+  }
+
+  .item-5 {
+    left: 400%;
+  }
+
+  .item-6 {
+    left: 500%;
+  }
+
+  .item-7 {
+    left: 600%;
+  }
+
+  .item-8 {
+    left: 700%;
+  }
+
+  .item-9 {
+    left: 800%;
+  }
+
+  .item-10 {
+    left: 900%;
+  }
+
+
+
+
+
+  .pre,
+  .next {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    line-height: 540px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .pre {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .pre:hover,
+  .next:hover {
+    background: #FFF;
+    opacity: 0.5;
+  }
+
+
+  .timer {
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .timer::after {
+    content: "期限2021-10-15 18:00";
+    margin-left: 100px;
+  }
+
+  .info {
+    display: flex;
+  }
+
+  .category-wrap {
+    width: 150px;
+  }
+
+  .category {
+    padding: 0;
+  }
+
+  .category_item {
+    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 12px;
+    width: 100px;
+    cursor: pointer;
+  }
+
+  .category_item .btn {
+    color: black;
+    padding: 0 auto;
+    cursor: pointer;
+  }
+
+  .production {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-auto-rows: 150px;
+    grid-gap: 10px;
+  }
+
+  .production-info {
+    padding-top: 25px;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .production-info_pic {
+    background-color: seagreen;
+    border-radius: 8px;
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .production-info_pic img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+
+  .model {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    /* opacity: 0.6; */
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    display: none;
+  }
+
+  .information {
+    width: 80vw;
+    height: 45vw;
+    background-color: seashell;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .information img {
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .go-top {
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    background-color: silver;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .go-top:hover {
+    color: #FFFF;
+  }
